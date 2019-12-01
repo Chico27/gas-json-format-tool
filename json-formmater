@@ -69,11 +69,11 @@ function arrangeJson(targetStr){
       }
     } else {
       if (endStr == 0){
-        output.push(loopSpace + '}')
-        targetStr = targetStr.slice(1)
         if (loopSpace.length != -1){
           loopSpace = loopSpace.slice(4)
         }
+        output.push(loopSpace + '}')
+        targetStr = targetStr.slice(1)
         continue
       }
       output.push(loopSpace + targetStr.slice(0, endStr))
